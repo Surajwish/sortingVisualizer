@@ -82,28 +82,28 @@ function mergeSortCall(arr, l, r, setArr) {
     if (l >= r) {
         return;
     }
-    var m = l + parseInt((r - l) / 2);
+    let m = l + parseInt((r - l) / 2);
     mergeSortCall(arr, l, m, setArr);
     mergeSortCall(arr, m + 1, r, setArr);
     merge(arr, l, m, r, setArr);
 }
 
 function merge(arr, l, m, r, setArr) {
-    var n1 = m - l + 1;
-    var n2 = r - m;
-    var L = new Array(n1);
-    var R = new Array(n2);
+    let n1 = m - l + 1;
+    let n2 = r - m;
+    let L = new Array(n1);
+    let R = new Array(n2);
 
-    for (var i = 0; i < n1; i++)
+    for (let i = 0; i < n1; i++)
         L[i] = arr[l + i];
-    for (var j = 0; j < n2; j++)
+    for (let j = 0; j < n2; j++)
         R[j] = arr[m + 1 + j];
 
-    var i = 0;
+    let i = 0;
 
-    var j = 0;
+    let j = 0;
 
-    var k = l;
+    let k = l;
 
     while (i < n1 && j < n2) {
         if (L[i] <= R[j]) {
