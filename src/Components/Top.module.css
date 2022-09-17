@@ -1,0 +1,32 @@
+#container {
+    width: 60%;
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title h3 {
+    margin-top: -15px;
+    font-weight: 100;
+    font-size: small;
+}
