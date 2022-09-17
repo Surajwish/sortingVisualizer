@@ -39,6 +39,7 @@ function Top({ arr, setArr }) {
                 delay = quickSort(arr, setArr);
                 break;
             }
+            default: break;
 
         }
         setTimeout(() => {
